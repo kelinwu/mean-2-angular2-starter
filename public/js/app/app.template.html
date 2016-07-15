@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <button class="btn btn-primary" (click) = "onAddMessage()">New message</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <article class="panel panel-default">
+                <div class="pannel-body" *ngFor="let message of messages">
+                    {{message.content}}
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
